@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaDiscord, FaEnvelope } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -57,6 +57,16 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://discordapp.com/users/407254472105000981"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <FaDiscord />
                 </a>
               </li>
               <li className="social-icons">
