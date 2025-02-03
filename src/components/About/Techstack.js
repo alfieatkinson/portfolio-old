@@ -1,68 +1,83 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
+  FaNode,
+  FaAws,
+  FaDocker,
+} from "react-icons/fa";
+import {
   DiPython,
+  DiReact,
   DiGit,
-  DiJava,
+  DiMysql,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
+  SiJavascript,
+  SiTypescript,
+  SiCplusplus,
+  SiDjango,
+  SiTailwindcss,
   SiPostgresql,
+  SiNextdotjs,
+  SiKubernetes,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      {/* Core Languages */}
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <SiJavascript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <SiCplusplus />
       </Col>
+
+      {/* Frontend Frameworks */}
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <SiTailwindcss />
+      </Col>
+
+      {/* Backend Frameworks/Platforms */}
+      <Col xs={4} md={2} className="tech-icons">
+        <FaNode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiDjango />
       </Col>
+
+      {/* Databases */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <DiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
       </Col>
+
+      {/* DevOps/Infrastructure Tools */}
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <FaDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKubernetes />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaAws />
       </Col>
     </Row>
   );
