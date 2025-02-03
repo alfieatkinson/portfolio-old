@@ -9,7 +9,7 @@ function Type() {
           "Full-Stack Software Engineer",
           "Python & MERN Stack",
           "Building with Django & React",
-          "MSc Computer Science",
+          "Master of Science in Computer Science",
         ],
         autoStart: true,
         loop: true,
