@@ -2,12 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -19,37 +14,16 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
+              I'm a postgraduate Full-Stack Software Engineer passionate about building innovative web technologies and optimising user experiences.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+              My areas of focus include <i><b className="purple">modern web development</b></i>, <i><b className="purple">cloud technologies</b></i>, and <i><b className="purple">DevOps practices</b></i>. I enjoy creating optimised, user-friendly solutions and solving complex problems.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              Currently, I'm working with technologies like <b className="purple">React</b>, <b className="purple">Django</b>, and <b className="purple">Node.js</b>; constantly expanding my skillset with tools like <b className="purple">PostgreSQL</b> and <b className="purple">Next.js</b>.
+              <br />
+              <br />
+              I'm also passionate about exploring areas like <b className="purple">artificial intelligence</b>, <b className="purple">cloud computing</b>, and <b className="purple">IoT</b>, eager to apply my knowledge to solve real-world challenges.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,27 +41,17 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/alfieatkinson"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                  <FaGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/alfieatkinson"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +61,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="mailto:alf.atkinson13@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <FaEnvelope />
                 </a>
               </li>
             </ul>
