@@ -2,12 +2,33 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import placeholderImage from "../../Assets/Projects/placeholder.png";
+import sentimentAnalysisTool from "../../Assets/Projects/sentiment-analysis-tool.png";
+import libraryManagementSystem from "../../Assets/Projects/library-management-system.png";
+import {
+  FaAws,
+  FaDocker,
+  FaReddit,
+  FaNetworkWired,
+} from "react-icons/fa";
+import {
+  DiPython,
+  DiReact,
+  DiGit,
+} from "react-icons/di";
+import {
+  SiTypescript,
+  SiCplusplus,
+  SiDjango,
+  SiTailwindcss,
+  SiPostgresql,
+  SiTensorflow,
+  SiNumpy,
+  SiPandas,
+  SiQt,
+  SiCmake,
+  SiGnubash,
+} from "react-icons/si";
 
 function Projects() {
   return (
@@ -21,70 +42,81 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={placeholderImage}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Open-License Media Web App (W.I.P.)"
+              description="Currently developing a web application designed to search, browse, and interact with open-license media such as images, music, and videos. It features a user management system for account creation, login, and content preferences, allowing users to save their favourite media and curate personal collections. Built with React for the frontend and Django for the backend, the app is designed to be scalable, secure, and user-friendly."
+              ghLink="https://github.com/alfieatkinson/Open-License-Media-Web-App"
+              techIcons={[
+                <DiGit />,
+                <SiTypescript />,
+                <DiReact />,
+                <SiTailwindcss />,
+                <SiDjango />,
+                <SiPostgresql />,
+                <FaAws />,
+                <FaDocker />,
+              ]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={libraryManagementSystem}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Library Management System"
+              description="Developed a console-based application in C++ for managing a library system, featuring concurrent access via sockets and full CRUD functionality. Worked independently to implement Test-Driven Development (TDD) with Catch2 for unit tests and automated builds with CMake."
+              ghLink="https://github.com/alfieatkinson/Library-Management-System"
+              techIcons={[
+                <DiGit />,
+                <SiCplusplus />,
+                <SiCmake />,
+                <SiGnubash />,
+                <FaNetworkWired />,
+              ]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={sentimentAnalysisTool}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Sentiment Analysis Tool"
+              description="Built a sentiment analysis tool in Python using deep learning models like BERT to analyse social media sentiments in real-time. Integrated Reddit API to fetch specific queries or subreddits, with results displayed via a user-friendly PyQt interface. Designed for scalability to handle high traffic and numerous API requests."
+              ghLink="https://github.com/alfieatkinson/sentiment-analysis-tool"
+              techIcons={[
+                <DiGit />,
+                <DiPython />,
+                <SiQt />,
+                <SiTensorflow />,
+                <SiNumpy />,
+                <SiPandas />,
+                <FaReddit />,
+              ]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={placeholderImage}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Lambda Calculus Interpreter"
+              description="Implemented a Python-based interpreter for lambda calculus logic, showcasing key computational theories like symbolic substitution and evaluation. This project enhanced my understanding of functional programming and computational logic, with applications in mathematical modelling and artificial intelligence."
+              ghLink="https://github.com/alfieatkinson/lambda-calculus-interpreter"
+              techIcons={[<DiPython />]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={placeholderImage}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Sudoku Solver"
+              description="Developed a Python script to solve Sudoku puzzles using constraint satisfaction with the Z3 theorem prover. The solver efficiently handles edge cases and large grids, ensuring compliance with Sudoku rules across rows, columns, and subgrids."
+              ghLink="https://github.com/alfieatkinson/sudoku-solver"
+              techIcons={[<DiPython />]}
             />
           </Col>
         </Row>
