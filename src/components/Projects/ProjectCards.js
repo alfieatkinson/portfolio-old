@@ -10,9 +10,11 @@ function ProjectCards(props) {
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
+        <br />
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
+
         <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
@@ -21,7 +23,6 @@ function ProjectCards(props) {
         {"\n"}
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -33,8 +34,23 @@ function ProjectCards(props) {
             {"Demo"}
           </Button>
         )}
+
+        <br />
+        <br />
+
+        {/* Only render tech icons if they are passed */}
+        {props.techIcons && props.techIcons.length > 0 && (
+          <div style={{ marginBottom: "10px" }}>
+            {props.techIcons.map((icon, index) => (
+              <span key={index} style={{ fontSize: "24px", marginRight: "10px" }}>
+                {icon}
+              </span>
+            ))}
+          </div>
+        )}
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;
