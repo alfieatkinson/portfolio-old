@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { FaArrowRight } from "react-icons/fa";
 
 function AboutCard() {
   return (
@@ -8,33 +8,37 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi! I'm <span className="purple">Alfie Atkinson </span>
+            from the <span className="purple"> United Kingdom.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            I am a Postgraduate Full-Stack Software Engineer with hands-on
+            experience with Agile development, DevOps practices, and cloud
+            technologies.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I am currently studying for a Master of Science in Computer Science at the University of Lincoln, and I am seeking a graduate roles beginning in September of 2025.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I also enjoy:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <FaArrowRight /> Playing video games and table-top games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <FaArrowRight /> Building custom computers
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <FaArrowRight /> Reading fantasy novels and thought-provoking literature
+            </li>
+            <li className="about-activity">
+              <FaArrowRight /> Collecting vinyl and exploring different music genres
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          {/*<p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Soumyajit</footer>*/}
         </blockquote>
       </Card.Body>
     </Card>
