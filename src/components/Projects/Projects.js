@@ -6,7 +6,6 @@ import placeholderImage from "../../Assets/Projects/placeholder.png";
 import sentimentAnalysisTool from "../../Assets/Projects/sentiment-analysis-tool.png";
 import libraryManagementSystem from "../../Assets/Projects/library-management-system.png";
 import {
-  FaAws,
   FaDocker,
   FaReddit,
   FaNetworkWired,
@@ -14,14 +13,18 @@ import {
 import {
   DiPython,
   DiReact,
+  DiHeroku,
   DiGit,
 } from "react-icons/di";
 import {
+  SiGithubactions,
   SiTypescript,
   SiCplusplus,
   SiDjango,
   SiTailwindcss,
   SiPostgresql,
+  SiVercel,
+  SiOpenverse,
   SiTensorflow,
   SiNumpy,
   SiPandas,
@@ -47,17 +50,21 @@ function Projects() {
               imgPath={placeholderImage}
               isBlog={false}
               title="Open-License Media Web App (W.I.P.)"
-              description="Currently developing a web application designed to search, browse, and interact with open-license media such as images, music, and videos. It features a user management system for account creation, login, and content preferences, allowing users to save their favourite media and curate personal collections. Built with React for the frontend and Django for the backend, the app is designed to be scalable, secure, and user-friendly."
+              description="Currently developing a web application designed to facilitate the searching, browsing, and management of open-license media. The application will also allow for secure user account management. The project is built using a TypeScript/React frontend and a Django/PostgreSQL backend, with CI/CD pipelines for automated testing and deployment on Vercel and Heroku."
               ghLink="https://github.com/alfieatkinson/Open-License-Media-Web-App"
               techIcons={[
                 <DiGit />,
+                <SiGithubactions />,
                 <SiTypescript />,
                 <DiReact />,
                 <SiTailwindcss />,
+                <DiPython />,
                 <SiDjango />,
                 <SiPostgresql />,
-                <FaAws />,
+                <SiVercel />,
+                <DiHeroku />,
                 <FaDocker />,
+                <SiOpenverse />,
               ]}
             />
           </Col>
