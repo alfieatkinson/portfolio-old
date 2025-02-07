@@ -748,17 +748,11 @@ button:focus {
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
+  height: 100% !important;
   width: 100% !important;
 }
 .education-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
-}
-
-.project-subheading {
-  color: white !important;
-  font-size: 1.8em !important;
-  font-weight: 500 !important;
-  padding-top: 10px !important;
 }
