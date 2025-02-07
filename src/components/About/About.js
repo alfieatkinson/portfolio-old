@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Educationcard from "./EducationCard";
 
 function About() {
   return (
@@ -47,6 +48,67 @@ function About() {
         </h1>
 
         <Toolstack />
+
+        <br />
+
+        <h1 className="project-heading">
+          Where I've <strong className="purple">Learned</strong>
+        </h1>
+
+        <br />
+
+        <Row>
+          <Col>
+            <Educationcard
+              title="Master of Science in Computer Science"
+              issuer="University of Lincoln"
+              dateRange="2024 - 2025"
+              grade="Predicted: Distinction (AVG: 84%)"
+              activities={[
+                "Computer Science Society Member",
+                "Hackathon Participant"
+              ]}
+              modules={[
+                "Advanced Artificial Intelligence",
+                "Advanced Machine Learning",
+                "Computer Vision",
+                "Information Systems Security",
+                "Programming Principles",
+                "Research Methods",
+                "Research Project",
+                "Software Engineering"
+              ]}
+            />
+          </Col>
+          <Col>
+            <Educationcard
+              title="Bachelor of Science in Computer Science"
+              issuer="University of Lincoln"
+              dateRange="2021 - 2024"
+              grade="First Class Honours"
+              activities={[
+                "Computer Science Society Member",
+                "Hackathon Participant",
+                "UKIEPC Participant"
+              ]}
+              modules={[
+                "Advanced Programming",
+                "Algorithms and Complexity",
+                "Artificial Intelligence",
+                "Cloud Computing",
+                "Logic and Computation",
+                "Machine Learning",
+                "Network Fundamentals",
+                "Parallel Programming",
+                "Scalable Database Systems",
+                "Team Software Engineering",
+                "User Experience Design"
+              ]}
+            />
+          </Col>
+        </Row>
+
+        <br />
       </Container>
     </Container>
   );
