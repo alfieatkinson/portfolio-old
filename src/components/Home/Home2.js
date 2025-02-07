@@ -17,13 +17,13 @@ function Home2() {
               I'm a postgraduate Full-Stack Software Engineer passionate about building innovative web technologies and optimising user experiences.
               <br />
               <br />
-              My areas of focus include <i><b className="purple">modern web development</b></i>, <i><b className="purple">cloud technologies</b></i>, and <i><b className="purple">DevOps practices</b></i>. I enjoy creating optimised, user-friendly solutions and solving complex problems.
+              My areas of focus include <b className="purple">modern web development</b>, <b className="purple">DevOps practices</b>, and <b className="purple">cloud technologies</b>. I enjoy creating optimised, user-friendly solutions and solving complex problems.
               <br />
               <br />
-              Currently, I'm working with technologies like <b className="purple">React</b>, <b className="purple">Django</b>, and <b className="purple">Node.js</b>; constantly expanding my skillset with tools like <b className="purple">PostgreSQL</b> and <b className="purple">Next.js</b>.
+              Currently, I'm working with technologies like <b className="purple">React</b>, <b className="purple">Django</b>, and <b className="purple">Node.js</b>; constantly expanding my skillset with tools like <b className="purple">TypeScript</b>, <b className="purple">PostgreSQL</b> and <b className="purple">Next.js</b>.
               <br />
               <br />
-              I'm also passionate about exploring areas like <b className="purple">artificial intelligence</b>, <b className="purple">cloud computing</b>, and <b className="purple">IoT</b>, eager to apply my knowledge to solve real-world challenges.
+              I'm also passionate about exploring areas like <b className="purple">AI/ML</b>, <b className="purple">UX/UI design</b>, and <b className="purple">cyber security</b>, eager to apply my knowledge to solve real-world challenges.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
