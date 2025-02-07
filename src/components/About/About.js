@@ -13,6 +13,8 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
+        <Github />
+        
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -46,7 +48,6 @@ function About() {
         </h1>
 
         <Toolstack />
-        <Github />
 
         <br />
 
