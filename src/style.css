@@ -755,3 +755,10 @@ button:focus {
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
+
+.project-subheading {
+  color: white !important;
+  font-size: 1.8em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
