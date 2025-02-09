@@ -58,7 +58,7 @@ function About() {
         <br />
 
         <Row>
-          <Col>
+          <Col xs={12} lg={6}>
             <Educationcard
               title="Master of Science in Computer Science"
               issuer="University of Lincoln"
@@ -80,7 +80,7 @@ function About() {
               ]}
             />
           </Col>
-          <Col>
+          <Col xs={12} lg={6}>
             <Educationcard
               title="Bachelor of Science in Computer Science"
               issuer="University of Lincoln"
